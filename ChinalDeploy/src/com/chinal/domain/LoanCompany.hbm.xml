@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.chinal.domain">
+	<class name="LoanCompany" table="loanCompany">
+		<id name="id" column="loanCompanyID" type="java.lang.Long" >
+			<generator class="identity"/>
+		</id>
+		<property name="name" column="name" type="string"
+			length="50" not-null="true" />
+		<many-to-one name="city" class="City" column="cityID"
+			not-null="true" />
+		<property name="description" column="description" type="string"
+			length="255" />
+	</class>
+</hibernate-mapping>

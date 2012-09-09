@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+	"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="adminDao" class="com.chinal.dao.AdminDao">
+		<property name="domainName">
+			<value>Admin</value>
+		</property>
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="userDao" class="com.chinal.dao.UserDao">
+		<property name="domainName">
+			<value>User</value>
+		</property>
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="provinceDao" class="com.chinal.dao.ProvinceDao">
+		<property name="domainName">
+			<value>Province</value>
+		</property>
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="cityDao" class="com.chinal.dao.CityDao">
+		<property name="domainName">
+			<value>City</value>
+		</property>
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="newsCategoryDao" class="com.chinal.dao.NewsCategoryDao">
+		<property name="domainName">
+			<value>NewsCategory</value>
+		</property>
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="newsDao" class="com.chinal.dao.NewsDao">
+		<property name="domainName">
+			<value>News</value>
+		</property>
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="loanCompanyDao" class="com.chinal.dao.LoanCompanyDao">
+		<property name="domainName">
+			<value>LoanCompany</value>
+		</property>
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+</beans>

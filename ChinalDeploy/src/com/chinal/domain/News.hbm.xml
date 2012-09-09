@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.chinal.domain">
+	<class name="News" table="news">
+		<id name="id" column="newsID" type="java.lang.Long" >
+			<generator class="identity"/>
+		</id>
+		<property name="title" column="title" type="string"
+			length="250" not-null="true"/>
+		<property name="content" column="content" type="java.sql.Clob"
+			not-null="true" />
+		<property name="abstractContent" column="abstractContent" type="string"
+			length="500"/>
+		<property name="originSource" column="originSource" type="string"
+			length="100"/>
+		<property name="publishedTime" column="publishedTime" type="timestamp"
+			length="40" not-null="true"/>
+		<many-to-one name="category" class="NewsCategory" column="categoryID"
+			not-null="true"/>
+		<property name="hot" column="hot" type="boolean"
+			not-null="true"/>
+		<many-to-one name="publisher" class="Admin" column="publisherID"
+			not-null="true" />
+		<property name="picturePath" column="picturePath" type="string"
+			length="500"/>
+	</class>
+</hibernate-mapping>

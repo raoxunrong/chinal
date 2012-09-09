@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.chinal.domain">
+	<class name="LoanRecord" table="loanRecord">
+		<id name="id" column="loanRecordID" type="java.lang.Long">
+			<generator class="identity" />
+		</id>
+		<many-to-one name="user" class="User" column="userID"
+			not-null="true" />
+		<many-to-one name="city" class="City" column="cityID"
+			not-null="true" />
+		<property name="money" column="money" type="integer" length="32"
+			not-null="true" />
+		<property name="allotedTime" column="allotedTime" type="string"
+			length="64" not-null="true" />
+		<property name="applyDate" column="applyDate" type="java.sql.Timestamp"
+			not-null="true" />
+		<property name="extraInfo" column="extraInfo" type="string"
+			length="255" />
+		<property name="interestRate" column="interestRate" type="integer"
+			length="32" not-null="true" />
+	</class>
+</hibernate-mapping>

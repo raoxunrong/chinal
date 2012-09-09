@@ -1,0 +1,139 @@
+.button {
+	background: #CECFCE;
+	border-top: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	border-bottom: 1px solid #000000;
+}
+
+TD.data {
+	BACKGROUND-COLOR: #eeeee0;
+	BORDER-BOTTOM: #cccc99 1px solid;
+	BORDER-LEFT: #ffffff 1px solid;
+	BORDER-RIGHT: #cccc99 1px solid;
+	BORDER-TOP: #ffffff 1px solid;
+	HEIGHT: 23px
+}
+
+.inputbox {
+	BORDER-RIGHT: #808080 1px solid;
+	BORDER-TOP: #808080 1px solid;
+	BORDER-LEFT: #808080 1px solid;
+	BORDER-BOTTOM: #808080 1px solid
+}
+
+TD.title {
+	BACKGROUND-COLOR: #3988E4;
+	BORDER-BOTTOM: #000033 1px solid;
+	BORDER-LEFT: #669999 1px solid;
+	BORDER-RIGHT: #000033 1px solid;
+	BORDER-TOP: #669999 1px solid;
+	COLOR: #ffffff;
+	PADDING-BOTTOM: 0px;
+	PADDING-LEFT: 10px;
+	PADDING-RIGHT: 10px;
+	PADDING-TOP: 0px
+}
+
+TD.header {
+	BACKGROUND-COLOR: #ffffff;
+	BORDER-BOTTOM: #cccccc 1px solid;
+	BORDER-LEFT: #ffffff 1px solid;
+	BORDER-RIGHT: #cccccc 1px solid;
+	BORDER-TOP: #ffffff 1px solid;
+	HEIGHT: 23px
+}
+
+TD {
+	FONT-FAMILY: ËÎÌו, Verdana, Helvetica, sans-serif;
+	FONT-SIZE: 12px
+}
+
+body {
+	background-color: #eeeeee;
+	SCROLLBAR-FACE-COLOR: #dce0e2;
+	SCROLLBAR-HIGHLIGHT-COLOR: #ffffff;
+	SCROLLBAR-SHADOW-COLOR: #687888;
+	SCROLLBAR-3DLIGHT-COLOR: #687888;
+	SCROLLBAR-ARROW-COLOR: #6e7e88;
+	SCROLLBAR-TRACK-COLOR: #bcbfc0;
+	SCROLLBAR-DARKSHADOW-COLOR: #dce0e2;
+	FONT-SIZE: 12px
+}
+
+A:link {
+	COLOR: blue;
+	TEXT-DECORATION: none
+}
+
+A:visited {
+	COLOR: blue;
+	TEXT-DECORATION: none
+}
+
+A:hover {
+	COLOR: blue;
+	TEXT-DECORATION: none
+}
+
+A.link1 {
+	COLOR: blue;
+	TEXT-DECORATION: none
+}
+
+A.link1:visited {
+	COLOR: blue;
+	TEXT-DECORATION: none
+}
+
+A.link1:hover {
+	COLOR: blue;
+	TEXT-DECORATION: none
+}
+
+.sort-table {
+	font: Icon;
+	border: 1px Solid ThreeDShadow;
+	background: Window;
+	color: WindowText;
+}
+
+.sort-table thead {
+	background: ButtonFace;
+}
+
+.sort-table td {
+	padding: 2px 5px;
+}
+
+.sort-table thead td {
+	border: 1px solid;
+	border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight;
+	cursor: default;
+}
+
+.sort-table thead td:active {
+	border-color: ButtonShadow ButtonHighlight ButtonHighlight ButtonShadow;
+	padding: 3px 4px 1px 6px;
+}
+
+.sort-table thead td[_sortType=None]:active {
+	border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight;
+	padding: 2px 5px;
+}
+
+.sort-arrow {
+	width: 11px;
+	height: 11px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin: 0 2px;
+}
+
+.sort-arrow.descending {
+	background-image: url("/computermis/images/downsimple.png");
+}
+
+.sort-arrow.ascending {
+	background-image: url("/computermis/images/upsimple.png");
+}
